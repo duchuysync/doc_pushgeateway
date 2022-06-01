@@ -1,0 +1,2 @@
+push data test pushgateway
+echo "test{queuename=\"normal\",service=\"rabbitmq\"} 0" |  curl --data-binary @- http://172.16.14.109:9091/metrics/job/test
